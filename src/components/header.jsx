@@ -5,7 +5,7 @@ const header = ({ genres, keyChange }) => {
     <div className="header">
       {genres.map((genre) => {
         return (
-          <button value={genre} onClick={keyChange}>
+          <button className="button" value={genre} onClick={keyChange}>
             {genre}
           </button>
         );
@@ -13,7 +13,5 @@ const header = ({ genres, keyChange }) => {
     </div>
   );
 };
-// const mybutton = (props) => {
-//
-// };
+
 export default header;

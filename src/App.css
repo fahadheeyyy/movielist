@@ -1,5 +1,5 @@
 .app {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 100vh;
   color: aliceblue;
   overflow: hidden;
@@ -21,15 +21,70 @@
   gap: 10px; /* Adjust the gap between boxes as needed */
 }
 .card {
-  height: 200px;
-  width: 140px;
-  background-color: yellow;
-  margin: 10px;
+  height: auto;
+  width: 180px;
+  background-color: #f3ce13;
+  margin: 20px;
+  padding-top: 7px;
   padding: 10px;
-  flex: 1;
-  color: #0f0b0b;
+  align-items: center;
+  flex: 5;
+  color: rgb(26, 26, 26);
+  border-radius: 10px;
+  text-align: center;
 }
-.header button {
-  background-color: yellow;
-  margin: 3px;
+.button {
+  background-color: rgb(26, 26, 26);
+  color: #f3ce13;
+  margin: 6px;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  text-overflow: clip;
+}
+/* .gen {
+  display: grid;
+} */
+.title {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+.image {
+  border-radius: 10px;
+  height: 150px;
+  width: auto;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.genre {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100px;
+}
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 10%;
+    overflow: scroll;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .card {
+    width: auto;
+    overflow: auto;
+    height: 200px;
+    text-align: left;
+  }
+  .button {
+    height: 20px;
+    display: inline-flex;
+    margin: 4px;
+  }
+  .title {
+    text-align: justify;
+  }
+  .image {
+    display: flex;
+    text-align: left;
+  }
 }

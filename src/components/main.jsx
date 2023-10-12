@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./card";
 
 const main = ({ movies }) => {
-  console.log("moviesmoviesmovies", movies);
+  console.log("moviesmoviesmovies");
 
   return (
     <div className="main">

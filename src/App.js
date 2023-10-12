@@ -32,7 +32,7 @@ function App() {
   // };
 
   console.log("## filter");
-  const [key, setKey] = useState("");
+  const [key, setKey] = useState(data.movies);
   // setMovieList(data.movies.genres[0] === "Comedy");
   var mov = data.movies;
 
