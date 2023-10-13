@@ -7,15 +7,15 @@ const card = ({ mov }) => {
         className="image"
         src={mov.posterUrl}
         width="80px"
-        alt="IMAGE NOT FOUND"
+        alt="Screenshot 2023-09-22 231511.png"
       ></img>
       <p className="title">{mov.title}</p>
       <p className="content">Genre:-</p>
       {mov.genres.map((gen) => {
         return <p className="content"> {gen}</p>;
       })}
-      <p className="content">Director: {mov.director}.</p>
-      <p className="content">Year: {mov.year}.</p>
+      <p className="contentone">Director: {mov.director}.</p>
+      <p className="contentone">Year: {mov.year}.</p>
       <p className="content">Plot: {mov.plot}.</p>
       <p className="content">Starring: {mov.actors}.</p>
       {/* <p className="content"></p>

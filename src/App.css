@@ -5,8 +5,9 @@
   overflow: hidden;
 }
 .header {
-  height: 15%;
+  height: auto;
   background-color: #242020;
+  text-align: center;
 }
 .main {
   height: 85%;
@@ -21,7 +22,7 @@
   gap: 10px; /* Adjust the gap between boxes as needed */
 }
 .card {
-  height: auto;
+  height: 220px;
   width: 180px;
   background-color: #f3ce13;
   margin: 20px;
@@ -32,6 +33,12 @@
   color: rgb(26, 26, 26);
   border-radius: 10px;
   text-align: center;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  background: #f3ce13;
+  width: 0;
+  height: 0;
 }
 .button {
   background-color: rgb(26, 26, 26);
@@ -39,8 +46,11 @@
   margin: 6px;
   height: 30px;
   width: 80px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-overflow: clip;
+  transition: all 0.2s ease;
+  transform: scale(0.96);
+  cursor: pointer;
 }
 /* .gen {
   display: grid;
@@ -49,6 +59,11 @@
   font-size: large;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  background-color: #242020;
+  border-radius: 6px;
+  color: #f3ce13;
+  padding: 2px 2px 2px 2px;
 }
 .image {
   border-radius: 10px;
@@ -57,34 +72,56 @@
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-.genre {
+.content {
   font-family: "Courier New", Courier, monospace;
   font-weight: 100px;
 }
+.contentone {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100px;
+}
+
 @media only screen and (max-width: 700px) {
   .header {
     height: 10%;
     overflow: scroll;
+    ::-webkit-scrollbar {
+      background-color: #242020;
+      width: 0;
+    }
     padding-top: 15px;
     padding-bottom: 10px;
   }
 
   .card {
     width: auto;
-    overflow: auto;
+    overflow: scroll;
     height: 200px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
   }
   .button {
     height: 20px;
     display: inline-flex;
     margin: 4px;
+    animation: reverse;
+    text-align: center;
   }
-  .title {
-    text-align: justify;
-  }
+  /* .title {
+    transform: translateY(-150px);
+    /* transform: translateX(-50px); */
+  /* text-align: right; */
+  /* } */
   .image {
     display: flex;
     text-align: left;
   }
+  /* .contentone {
+    transform: translate(110px, -350px);
+    overflow: initial;
+  }
+  .content {
+    transform: translateY(-70px);
+  } */
 }
